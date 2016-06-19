@@ -4,6 +4,9 @@
 
 ## Write a short comment describing this function
 
+
+# accepts a mtrix and saves the matrix in a list along with functions to cache/save the inverse
+# of a matrix, ou can also change the matrix that is saved
 makeCacheMatrix <- function(x = matrix()) {
         inverse <- NULL
         set <- function(y) {
@@ -21,6 +24,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+
+# accepts a makeCacheMatrix type and computes the inverse if it already computed
+# if a inverse is already computed for the matrix in question
+# it returns the inverse that was cached
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
